@@ -1,0 +1,37 @@
+Linux运行过程(Ubuntu/草稿)
+sudo apt update
+sudo apt install sqlite3
+sudo apt install golang-go
+/*
+mkdir login_db
+cd login_db
+touch main.go
+touch go.mod
+touch go.sum
+code.
+*/
+sudo apt update
+sudo apt install build-essential
+export GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
+go get golang.org/x/crypto/bcrypt
+
+go mod init login_db        //go mod init <module-name>    // initialize a new module with the given name
+go mod tidy                  // add missing and remove unused modulesgo mod tidy
+MinGW-w64-x86_64-gcc-10.2.0-mingw-w64-x86_64-bin.tar.xz
+ cd /mnt/c/Users/wangl/Desktop/Project/login_db
+ sqlite3 login_system.db
+ .schema Users
+  .quit
+  # 查询数据
+  .tables
+  .schema table_name
+  SELECT * FROM users;
+
+# 删除数据库
+rm login_system.db
+/mnt/c/Users/wangl/Desktop/Project/login_db$ del login_system.db
+# 运行
+export GOMODCACHE=$HOME/go/pkg/mod
+ go get golang.org/x/crypto/bcrypt
+ go run main.go 
+ 
